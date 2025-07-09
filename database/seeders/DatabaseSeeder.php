@@ -1,0 +1,27 @@
+<?php
+
+namespace Database\Seeders;
+
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * Seed the application's database.
+     */
+    public function run(): void
+    {
+           $this->call([
+            FuncionarioSeeder::class,
+            MaquinistaSeeder::class,
+            EstacaoSeeder::class,
+            TremSeeder::class,
+            PassageiroSeeder::class,
+            ViagemSeeder::class,
+            BilheteSeeder::class,
+            ViagemOperacaoSeeder::class,
+        
+    ]);
+    }
+}
